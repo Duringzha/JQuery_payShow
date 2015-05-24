@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+    <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="js/jquery-mousewheel.js" type="text/javascript"></script>
+    <script src="js/page.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=0deXui36KYwlP4ZWPDGD3cGL"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css"/>
+    <script src="js/map.js" type="text/javascript"></script>
+    <title>page</title>
+</head>
+<body>
+<script>
+    $(function(){
+        $("body").page();
+    })
+</script>
+    <div class="header navInTop">
+        <div class="topNav"></div>
+        <div class="mainNav"></div>
+    </div>
+    <div class="mainContent">
+        <div class="page" id="page1">
+            <div class="videoPlayArea pageBg">
+                <div class="videoContent pageBg">
+                    <video id="myVideo" class="pageBg" poster="images/videoBg.jpg" autoplay="autoplay">
+                        <source type="video/mp4" src="https://t.alipayobjects.com/images/T1T78eXapfXXXXXXXX.mp4">
+                    </video>
+                    <div class="videoMask"></div>
+                    <div id="videoBg" class="poster"></div>
+                </div>
+                <div class="pageContent">
+                    <div class="laymid">
+                        <div class="logo">
+                            <img src="images/title1.png" />
+                            <a id="videoStart"><img src="images/Play.png" width="30" height="30"></a>
+                        </div>
+                        <div class="layBtn">
+                            <a href="#"><button class="login">登陆</button></a>
+                            <a href="#"><button class="enroll">注册</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page pageBg" id="page2">
+            <div class="pageContent">
+                <div class="page2Text">
+                    <img src="images/4JdlKWNmB3.png">
+                </div>
+                <div class="cloud cloudTop1"><img src="images/T10QFeXdlgXXXXXXXX.png"></div>
+                <div class="cloud cloudTop2"><img src="images/T19AteXc4xXXXXXXXX.png"></div>
+                <div class="cloud cloudMid"><img src="images/4JdkuzHbDJ.png"/> </div>
+                <div class="cloud cloudBottom"><img src="images/4JdkvPL4wX.png"></div>
+                <div class="personImg"><img src="images/person.png"></div>
+            </div>
+            <div class="pageNav"></div>
+        </div>
+        <div class="page pageBg" id="page3">
+            <div class="pageContent">
+                <img id="topHand" src="images/hand1.png">
+                <div class="page3Text">
+                    <img src="images/title3.png">
+                </div>
+                <img id="bottomHand" src="images/hand2.png">
+            </div>
+            <div class="pageNav"></div>
+        </div>
+        <div class="page pageBg" id="page4">
+            <div class="pageContent">
+                <div class="page4Text">
+                    <img src="images/title4.png">
+                </div>
+            </div>
+            <div class="pageNav"></div>
+        </div>
+        <div class="page pageBg" id="page5">
+            <div class="pageContent">
+                <div class="page5Text">
+                    <img src="images/title5.png">
+                </div>
+            </div>
+            <div class="pageNav"></div>
+        </div>
+        <div class="page pageBg" id="page6">
+            <div class="pageContent">
+                <div class="page6Text">
+                    <img src="images/title6.png">
+                </div>
+            </div>
+            <div class="pageNav"></div>
+        </div>
+        <div class="page pageBg" id="page7">
+            <div class="topHalf"></div>
+            <div class="bottomHalf">
+                <div class="mapView" id="allmap">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slideTab">
+        <ul id="slide">
+            <li><a href="javascript:void(0)" title="1" class="active"></a></li>
+            <li><a href="javascript:void(0)" title="2"></a></li>
+            <li><a href="javascript:void(0)" title="3"></a></li>
+            <li><a href="javascript:void(0)" title="4"></a></li>
+            <li><a href="javascript:void(0)" title="5"></a></li>
+            <li><a href="javascript:void(0)" title="6"></a></li>
+            <li><a href="javascript:void(0)" title="7"></a></li>
+        </ul>
+    </div>
+    <div class="downBox" id="downBtn">
+        <img src="images/down.png"/>
+    </div>
+</body>
+</html>

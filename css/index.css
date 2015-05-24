@@ -1,0 +1,353 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.header{
+    _position: relative;
+    _top: 0;
+    width: 100%;
+    z-index: 110;
+}
+.topNav{
+    width: 100%;
+    height: 31px;
+    background: #333;
+}
+.mainNav{
+    width: 100%;
+    height: 60px;
+    background:white;
+    opacity: 0.9;
+}
+.navInTop{
+    float: left;
+    display: block;
+    z-index: 100;
+    overflow: visible;
+    position: fixed;
+    top: 0px;
+    _position: absolute;
+    _top: expression(documentElement.scrollTop + "px");
+}
+.downBox{
+    float: left;
+    display: block;
+    z-index: 89;
+    overflow: visible;
+    position: fixed;
+    bottom: 80px;
+    _position: absolute;
+    _bottom: expression(documentElement.scrollTop + "px");
+    left: 50%;
+    cursor: pointer;
+}
+.slideTab{
+    width: 50px;
+    height: 200px;
+    float: left;
+    display: block;
+    z-index: 110;
+    overflow: visible;
+    position: fixed;
+    bottom: 20%;
+    _position: absolute;
+    _bottom: expression(documentElement.scrollTop + "px");
+    right: 20px;
+    cursor: pointer;
+}
+.slideTab ul{
+    list-style: none;
+}
+.slideTab ul li a{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px white solid;
+    margin-top: 10px;
+}
+.active{
+    background: dodgerblue;
+}
+.mainContent{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+.page{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.page{
+    transition-property: background-size;
+    transition-duration: 2000ms;
+    transition-timing-function: linear;
+    /* Firefox 4 */
+    -moz-transition-property:background-size;
+    -moz-transition-duration: 2000ms;
+    -moz-transition-timing-function:linear;
+    /* Safari 和 Chrome */
+    -webkit-transition-property:background-size;
+    -webkit-transition-duration: 2000ms;
+    -webkit-transition-timing-function:linear;
+    /* Opera */
+    -o-transition-property:background-size;
+    -o-transition-duration: 2000ms;
+    -o-transition-timing-function:linear;
+}
+.videoPlayArea{
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.videoPlay{
+    background-color: transparent;
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.videoMask{
+    width: 100%;
+    height: 99%;
+    background: none repeat scroll 0% 0% #000;
+    opacity: 0.35;
+    transform: translate3d(0px, 0px, 0px);
+    z-index: 10;
+}
+.videoMask,.poster{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.poster{
+    background: url("../images/videoBg.jpg");
+    opacity: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 9;
+}
+.pageContent{
+    width: 30%;
+    height: 99%;
+    margin: 0 auto;
+    z-index: 99;
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+.laymid{
+    width: 580px;
+    z-index: 3;
+    margin-top: 70%;
+}
+.logo{
+    height: 100px;
+    float: left;
+}
+.logo a{
+    display: block;
+    float: right;
+    margin-top: 35px;
+    cursor: pointer;
+    display: none;
+}
+.layBtn{
+    width: 100%;
+    float: left;
+}
+.layBtn button {
+    width: 32%;
+    height: 32px;
+    border-radius: 5px;
+    margin-left: 13px;
+    cursor: pointer;
+}
+.login{
+    background: deepskyblue;
+    color: white;
+    border: none;
+}
+.login:hover{
+    background: dodgerblue;
+}
+.enroll{
+    background: none;
+    color: white;
+    border: 1px white solid;
+}
+#page2{
+    background-image: url("../images/page2Bg.jpg");
+    z-index: 10;
+    background-size: 105% 105%;
+}
+#page3{
+    background-image: url("../images/page3Bg.jpg");
+    z-index: 10;
+    background-size: cover;
+}
+#page4{
+    background-image: url("../images/page4Bg.jpg");
+    z-index: 10;
+    background-size: 100% 100%;
+}
+#page5{
+    background-image: url("../images/page5Bg.jpg");
+    z-index: 10;
+    background-size: cover;
+}
+#page6{
+    background-image: url("../images/page6Bg.jpg");
+    z-index: 10;
+    background-size: 100% 100%;
+}
+#page7{
+    z-index: 90;
+    background: gainsboro;
+}
+.personImg{
+    position: absolute;
+    bottom: -15px;
+    left: 70px;
+    z-index: 10;
+}
+.page2Text{
+    position: absolute;
+    top: 35%;
+    left: -35%;
+    display: none;
+}
+.page2Text img , .page3Text img , .page4Text img , .page5Text img , .page6Text img{
+    width: 80%;
+    height: 80%;
+}
+.page3Text{
+    position: absolute;
+    top: 32%;
+    right: -10%;
+    display: none;
+}
+.page4Text{
+    position: absolute;
+    top: 32%;
+    left: -40%;
+    display: none;
+}
+.page5Text{
+    position: absolute;
+    top: 32%;
+    right: -10%;
+    display: none;
+}
+.page6Text{
+    position: absolute;
+    top: 30%;
+    left: -50%;
+    display: none;
+}
+#topHand , #bottomHand{
+    position: absolute;
+}
+#topHand{
+    top: -80%;
+    left: -145%;
+}
+#bottomHand{
+    bottom: -73%;
+    right: -210%;
+}
+.cloudTop1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.cloudTop2 img{
+    width: 70%;
+    height: 70%;
+}
+.cloudTop2{
+    position: absolute;
+    top: 8%;
+}
+.cloudMid{
+    position: absolute;
+    top: 15%;
+    left: -60%;
+}
+.cloudBottom{
+    position: absolute;
+    top : 55%;
+}
+.cloudBottom img{
+    width: 50%;
+    height: 50%;
+}
+.pageNav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #000000;
+    opacity: 0.4;
+    z-index: 100;
+}
+.topHalf{
+    width: 100%;
+    height: 50%;
+    float: left;
+    background: #F5F5F5;
+}
+.bottomHalf{
+    width: 100%;
+    height: 50%;
+    float: left;
+    background: #1E1B29;
+}
+.mapView{
+    width: 50%;
+    height: 100%;
+    float: right;
+    background: #cccccc;
+}
+#allmap {
+    height: 80%;
+    width: 30%;
+    margin-top: 2%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+
+dl, dt, dd, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+dt {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    font-weight: bold;
+    border-bottom: 1px dotted #000;
+    padding: 5px 0 5px 5px;
+    margin: 5px 0;
+}
+
+dd {
+    padding: 5px 0 0 5px;
+}
+
+li {
+    line-height: 28px;
+}
